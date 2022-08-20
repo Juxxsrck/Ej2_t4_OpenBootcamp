@@ -21,6 +21,12 @@ public class Main {
 
         int numeroFor = 0;
         numero_for(numeroFor);
+
+        System.out.println();
+        System.out.println();
+
+        String station = "Invierano";
+        estacionSwitch(station);
     }
 
     public static void numero_if(int numero){
@@ -48,6 +54,25 @@ public class Main {
     public static void numero_for(int numero){
         for ( ; numero <= 3; numero++) {
             System.out.println("El numero es: " + numero);
+        }
+    }
+
+    public static void estacionSwitch(String estacion){
+        switch (estacion){
+            case "Primavera":
+                System.out.println("Está en la estacion: " + estacion);
+                break;
+            case "Verano":
+                System.out.println("Está en la estacion: " + estacion);
+                break;
+            case "Otoño":
+                System.out.println("Está en la estacion: " + estacion);
+                break;
+            case "Invierno":
+                System.out.println("Está en la estacion: " + estacion);
+                break;
+            default:
+                System.out.println("Esta no es una estacion: " + estacion);
         }
     }
 }
